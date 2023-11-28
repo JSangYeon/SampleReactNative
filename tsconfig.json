@@ -1,0 +1,18 @@
+{
+	"extends": "@tsconfig/react-native/tsconfig.json",
+	"include": [".eslintrc.js", "index.js", "./src/*"],
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"experimentalDecorators": true
+	},
+	"baseUrl": ".",
+	"paths": {
+		"assets/*": ["./src/assets"],
+		"router/*": ["./src/router"],
+		"components/*": ["./src/components"],
+		"containers/*": ["./src/containers"],
+		"screens/*": ["./src/screens"],
+		"utils/*": ["./src/utils"],
+		"redux/*": ["./src/redux"]
+	}
+}
