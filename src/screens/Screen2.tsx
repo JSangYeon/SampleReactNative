@@ -5,6 +5,7 @@ import { Screen2NavigationProp } from 'stack/AppNavigator';
 import { useSelector } from 'react-redux';
 import { RootState } from '../redux/stores/store'; // rootReducer가 있는 파일 경로로 수정해주세요
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useCounter } from '../hooks/useCounter';
 
 type Screen2Props = {
   navigation: Screen2NavigationProp;
@@ -15,6 +16,8 @@ type Screen2Props = {
 const Screen2 = ({ navigation } :Screen2Props) => {
   const counter = useSelector((state: RootState) => state.counter);
 
+  
+  const { count, increment, decrement } = useCounter();
   useEffect(() => {
     // 여기에서 counter 값을 사용하여 필요한 작업을 수행합니다.
   }, [counter]);
@@ -25,6 +28,11 @@ const Screen2 = ({ navigation } :Screen2Props) => {
 
       <Text style= {styles.blueText}>Screen 2</Text>
       <Button title="Go to Screen 1" onPress={() => navigation.navigate('Screen1')} />
+
+      
+      <Text style= {styles.blueText}>useCounter Test count : {count}</Text>
+      <Button  title="Increment" onPress={increment}/>
+      <Button  title="decrement" onPress={decrement}/>
     </SafeAreaView>
   );
 };

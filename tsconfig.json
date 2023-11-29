@@ -14,5 +14,6 @@
 		"screens/*": ["./src/screens"],
 		"utils/*": ["./src/utils"],
 		"redux/*": ["./src/redux"],
+		"hooks/*": ["./src/hooks"],
 	}
 }
