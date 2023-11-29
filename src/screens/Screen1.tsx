@@ -4,7 +4,7 @@ import { Screen1NavigationProp } from '../stack/AppNavigator';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../redux/stores/store'; // rootReducer가 있는 파일 경로로 수정해주세요
-import { incrementCounter } from '../redux/actions/action'; // 액션 파일 경로로 수정해주세요
+import { incrementCounter } from '../redux/actions'; // 액션 파일 경로로 수정해주세요
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 type Screen1Props = {

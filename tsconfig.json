@@ -13,6 +13,6 @@
 		"containers/*": ["./src/containers"],
 		"screens/*": ["./src/screens"],
 		"utils/*": ["./src/utils"],
-		"redux/*": ["./src/redux"]
+		"redux/*": ["./src/redux"],
 	}
 }

@@ -7,7 +7,7 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './redux/stores/store'; // store 파일 경로로 수정해주세요
+import { store } from './redux/stores'; // store 파일 경로로 수정해주세요
 import Screen1 from './screens/Screen1'; // Screen1 파일 경로로 수정해주세요
 import Screen2 from './screens/Screen2'; // Screen2 파일 경로로 수정해주세요
 import { NavigationContainer } from '@react-navigation/native';

@@ -1,8 +1,7 @@
 // AppNavigator.tsx
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Screen1 from '../screens/Screen1';
-import Screen2 from '../screens/Screen2';
+import {Screen1, Screen2} from '../screens';
 // types/index.d.ts
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
