@@ -1,7 +1,9 @@
 // AppNavigator.tsx
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Screen1, Screen2} from '../screens';
+import { Screen1, Screen2 } from '../screens';
+import FakeScreen2 from '../screens/Screen2'
+import  FakeScreen  from '../screens/SampleScreen'
 // types/index.d.ts
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
@@ -31,8 +33,8 @@ const AppNavigator = () => {
     screenOptions={{
       headerShown: false
     }}>
-      <Stack.Screen name="Screen1" component={Screen1} />
-      <Stack.Screen name="Screen2" component={Screen2} />
+      <Stack.Screen name="Screen1" component={FakeScreen} />
+      <Stack.Screen name="Screen2" component={FakeScreen2} />
     </Stack.Navigator>
   );
 };
